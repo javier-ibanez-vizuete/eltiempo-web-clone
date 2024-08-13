@@ -81,73 +81,70 @@ hr {
 header {
     display: flex;
     flex-direction: column;
-
-    background-color: beige;
 }
 
 header .top-header {
     background-color: #F4F5F7;
     padding: 5px 0;
-    min-width: 500px;
 }
 
 header .top-header-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    gap: 5px;
+    gap: 20px;
 
-    min-width: 500px;
     width: 65%;
     margin: 0 auto;
 }
 
-.top-header-container .title-container {
-    /* flex: 1; */
-    min-width: 25%;
-}
-
 .top-header-container h1 {
     font-size: 12px;
-
-    flex-shrink: 0;
     color: gray;
-    min-width: 100%;
+}
 
+.header-separator {
+    height: 20px;
+    width: 1px;
+    background-color: #C1C7D0;
 }
 
 aside {
     display: flex;
     align-items: center;
-    gap: 2px;
-    flex: 5;
-    flex-shrink: 5;
-    min-width: 69%;
-    width: 69%;
+    flex: 1;
+    gap: 8px;
 
     font-size: 10px;
 }
 
 aside h6 {
     font-size: 12px;
-    color: gray;
+    font-weight: 300;
+    color: #8F97A8;
 }
 
 .nav-links {
-    color: rgb(83, 83, 83);
     display: flex;
-    justify-content: space-between;
-    flex: 1;
-    text-align: center;
-    gap: 2px;
-    white-space-collapse: none;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    
+    color: #56657D;
 }
 
-.nav-links span {
+.links-header-separator {
+    height: 10px;
+    width: 1px;
+    background-color: #C3C9D1;
+
+}
+
+/* .nav-links span {
     position: relative;
 }
-
-.nav-links span::after {
+ */
+/* .nav-links span::after {
     content: "";
     position: absolute;
     top: 2px;
@@ -156,7 +153,7 @@ aside h6 {
     height: 70%;
     width: 1px;
     background-color: #000000;
-}
+} */
 
 .bottom-header {
     background-color: #24AEEF;
@@ -932,4 +929,9 @@ footer .footer-limits {
     body {
         background-color: green;
     }
+
+    /* ----------HEADER----------- */
+    /* ----------HEADER / TOP-------- */
+
+
 }
