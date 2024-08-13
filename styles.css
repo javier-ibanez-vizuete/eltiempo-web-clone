@@ -49,32 +49,32 @@ hr {
     padding: 0;
 }
 
-.separator-horizontal {
+/* .separator-horizontal {
     height: 2px;
     width: 100%;
     background-color: green;
-}
+} */
 
-.punto {
+/* .punto {
     height: 4px;
     width: 4px;
     border-radius: 50%;
     background-color: green;
-}
+} */
 
-.separator-vertical {
+/* .separator-vertical {
     height: 100%;
     width: 4px;
     background-color: red;
-}
+} */
 
-.separator-pink {
+/* .separator-pink {
     background-color: #fabada;
-}
+} */
 
-.separator-small {
+/* .separator-small {
     height: 50%;
-}
+} */
 
 /* -----------HEADER------- */
 
@@ -220,39 +220,39 @@ header .bottom-header-container {
 .main-content-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 20px;
 
-    min-height: 100%;
-    min-width: 500px;
     width: 65%;
     margin: 0 auto;
+    padding: 60px 0 40px;
 }
+
+/* ------------------MAIN / MAP SECTION------------ */
 
 .map-section-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 4px;
-    flex-shrink: 1;
+    justify-content: space-between;
+    gap: 12px;
 
-    padding-top: 40px;
     font-size: 12px;
-    font-weight: 700;
-    width: 65%;
-    min-width: 55%;
+    width: 80%;
 }
 
 .top-main-image {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-self: stretch;
 }
 
 .left-side-time button {
     cursor: pointer;
+    width: 15px;
+}
+
+.left-side-time img {
+    width: 100%;
 }
 
 .top-main-image .day-style {
@@ -260,9 +260,11 @@ header .bottom-header-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     flex: 1;
 
+    font-weight: 700;
+    padding-bottom: 4px;
     border-bottom: 2px solid transparent;
 }
 
@@ -270,36 +272,58 @@ header .bottom-header-container {
     border-bottom: 2px solid #F33224;
 }
 
-.top-main-image .today-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
 .day-style small {
     font-size: 10px;
+    font-weight: 400;
+    color: #858EA0;
+}
+
+.top-main-image .today-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
 }
 
 .today-container button {
     display: flex;
+    justify-content: center;
     align-items: center;
+
     font-weight: 700;
     color: #24AEEF;
 }
 
+.today-container img {
+    width: 15px;
+}
+
 .right-side-time button {
     cursor: pointer;
+    width: 15px;
+}
+
+.right-side-time img {
+    width: 100%;
 }
 
 .main-image-container {
     display: flex;
-    align-items: flex-end;
-
-    border-top-right-radius: 32px;
-    min-width: 55%;
+    justify-content: center;
+    align-items: center;
 }
 
+.main-image-container img {
+    width: 100%;
+}
+
+.map-section-separator {
+    width: 100%;
+    height: 1px;
+    background-color: #C8C8C8;
+}
+
+/* ---------------MAIN / SEASON SECTION---------- */
 
 .season-section {
     display: flex;
