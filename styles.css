@@ -44,10 +44,6 @@ button {
     margin: 0;
 }
 
-img {
-    /* width: 100%; */
-}
-
 hr {
     margin: 0;
     padding: 0;
@@ -930,4 +926,10 @@ footer .footer-limits {
     align-items: center;
 
     margin-top: -10px;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 480px) {
+    body {
+        background-color: green;
+    }
 }
