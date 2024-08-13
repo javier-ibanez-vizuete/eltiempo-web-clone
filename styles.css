@@ -76,12 +76,14 @@ hr {
     height: 50%;
 }
 
-/* A partir de aquí introduce tus estilos */
+/* -----------HEADER------- */
 
 header {
     display: flex;
     flex-direction: column;
 }
+
+/* --------------HEADER / TOP-------------- */
 
 header .top-header {
     background-color: #F4F5F7;
@@ -134,94 +136,71 @@ aside h6 {
 }
 
 .links-header-separator {
-    height: 10px;
+    height: 5px;
     width: 1px;
     background-color: #C3C9D1;
-
 }
 
-/* .nav-links span {
-    position: relative;
-}
- */
-/* .nav-links span::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    bottom: 2px;
-    right: 0;
-    height: 70%;
-    width: 1px;
-    background-color: #000000;
-} */
+/* ------------------HEADER / BOTTOM------------ */
 
 .bottom-header {
     background-color: #24AEEF;
-    min-width: 500px;
 }
 
 header .bottom-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    /* gap: 140px; */
 
-    min-width: 500px;
     width: 65%;
     margin: 0 auto;
     padding: 8px 0;
 }
 
 .nav-image-container {
-    min-width: 40px;
+    width: 100px;
     flex-shrink: 0;
 }
 
 .nav-image-container img {
-    max-width: 100%;
-    height: 40px;
+    width: 100%;
 }
 
 .bottom-header-container form {
-    flex: 1;
-    flex-shrink: 1;
-    min-width: 100px;
+    width: 50%;
 }
 
 .searching-nav-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    height: 36px;
 }
 
 .searching-nav-container input {
-    display: flex;
-    align-items: center;
-    flex: 1;
+    flex: 1; 
 
-    /* padding: 8px 16px; */
     border: none;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
-    padding-left: 12px;
-    height: 36px;
+    padding-left: 16px;
 }
 
 .searching-nav-container input:focus {
     outline: none;
 }
-/* .searching-nav-container input::placeholder {
-    color: red;
-    margin-bottom: 10px;
-} */
 
 .searching-nav-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     border: none;
     background-color: white;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    padding-right: 12px;
-    height: 36px;
+    padding-right: 16px;
     cursor: pointer;
 }
 
@@ -229,15 +208,14 @@ header .bottom-header-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-
-    min-width: 10px;
 }
 
 .btn-menu-container img {
-    height: 100%;
+    width: 100%;
     cursor: pointer;
 }
+
+/* -----------------MAIN------------------ */
 
 .main-content-container {
     display: flex;
