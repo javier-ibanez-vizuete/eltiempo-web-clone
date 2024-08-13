@@ -317,7 +317,7 @@ header .bottom-header-container {
     width: 100%;
 }
 
-.map-section-separator {
+.section-separator {
     width: 100%;
     height: 1px;
     background-color: #C8C8C8;
@@ -329,21 +329,19 @@ header .bottom-header-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-bottom: 20px;
 }
 
 
 .season-section h2 {
     border-bottom: 4px solid #24AEEF;
     padding-bottom: 8px;
+    font-weight: 800;
 }
 
 .cards-container {
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    flex-wrap: wrap;
-    min-width: 100%;
 }
 
 .card {
@@ -355,7 +353,6 @@ header .bottom-header-container {
     background-color: #F4F5F7;
     padding: 20px 16px;
     flex: 1;
-    min-height: 100%;
 }
 
 .card-style {
@@ -364,14 +361,13 @@ header .bottom-header-container {
 }
 
 .card h3 {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .mini-cards-container {
     display: flex;
     justify-content: space-between;
-    gap: 16px;
-    flex-wrap: wrap;
+    gap: 28px;
     flex: 1;
 }
 
@@ -383,8 +379,13 @@ header .bottom-header-container {
     flex: 1;
 
     background-color: white;
-    box-shadow: 1px 2px 4px -2px rgba(0, 0, 0, 1);
-    padding: 12px 12px;
+    padding: 12px;
+}
+
+.horizontal-card-separator {
+    width: 100%;
+    height: 1px;
+    background-color: #DCDFE5;
 }
 
 .mini-card-description {
@@ -392,6 +393,7 @@ header .bottom-header-container {
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
+    gap: 4px;
 }
 
 .options-station-container {
@@ -399,7 +401,6 @@ header .bottom-header-container {
     align-items: center;
     gap: 8px;
     flex: 1;
-    flex-shrink: 1;
 }
 
 .options-station-container div {
@@ -414,7 +415,7 @@ header .bottom-header-container {
 }
 
 .options-station-container p {
-    min-width: 70%;
+    font-size: 14px;
 }
 
 .sections-anchor {
@@ -428,17 +429,21 @@ header .bottom-header-container {
 .sections-anchor span {
     flex: 1;
     font-size: 14px;
+    font-weight: 700;
 }
 
 .sections-anchor img {
-    height: 100%;
     width: 30px;
 }
 
 .flu-style {
-    background-color: white;
-    padding: 12px 12px;
+    display: flex;
     justify-content: flex-start;
+    gap: 16px;
+    flex: 1;
+
+    background-color: white;
+    padding: 12px;
 }
 
 .places-container {
@@ -446,22 +451,24 @@ header .bottom-header-container {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 8px;
+    gap: 4px;
+    flex: 1;
 }
 
 .places {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    justify-content: space-between;
     align-items: flex-start;
+    gap: 4px;
 }
 
 .places p {
     color: white;
     font-weight: 700;
-    padding: 2px 24px;
+    padding: 4px 24px;
     background-color: #6554C0;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 /* --------------------Estilos para la segunda seccion del Main------------- */
