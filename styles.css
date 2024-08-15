@@ -151,16 +151,34 @@ header .bottom-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 140px; */
 
     width: 65%;
     margin: 0 auto;
     padding: 8px 0;
 }
 
+.logo-mobile-container {
+    display: none;
+}
+
+.logo-mobile {
+    display: flex;
+    width: 28px;
+}
+
+.logo-mobile img {
+    width: 100%;
+}
+
 .nav-image-container {
     width: 100px;
     flex-shrink: 0;
+}
+
+.nav-image-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-image-container img {
@@ -819,7 +837,7 @@ header .bottom-header-container {
     background-color: #C1C7D0;
 }
 
-/* ----------FOOTER----------- */
+/* ---------------FOOTER----------------- */
 
 footer {
     background-color: #24AEEF;
@@ -1052,11 +1070,232 @@ footer .footer-limits {
 
 @media only screen and (min-width: 350px) and (max-width: 480px) {
     body {
+        overflow-x: hidden;
         background-color: green;
     }
 
     /* ----------HEADER----------- */
     /* ----------HEADER / TOP-------- */
 
+    header .top-header {
+        padding: 4px;
+    }
 
+
+    header .top-header-container {
+        gap: 0;
+
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .top-header-container h1 {
+        display: none;
+    }
+
+    .header-separator {
+        display: none;
+    }
+
+    aside {
+        align-items: center;
+        flex: 1;
+        gap: 4px;
+
+        white-space: nowrap;
+        overflow-x: auto;
+        font-size: 8px;
+    }
+
+    aside h6 {
+        font-size: 10px;
+    }
+
+    /* ----------------HEADER / BOTTOM--------------- */
+
+    header .bottom-header-container {
+        width: 100%;
+        margin: 0 0;
+        padding: 8px 4px;
+    }
+
+    .logo-mobile-container {
+        display: block;
+    }
+
+    .logo-mobile {
+        display: flex;
+        width: 28px;
+    }
+
+    .logo-mobile img {
+        width: 100%;
+    }
+
+    .nav-image-container {
+        display: none;
+    }
+
+    .bottom-header-container form {
+        width: 75%;
+    }
+
+    .searching-nav-container {
+        height: 32px;
+    }
+
+    .searching-nav-container input {
+        padding-left: 12px;
+    }
+
+    .searching-nav-container button {
+        padding-right: 12px;
+    }
+
+    /* ----------------MAIN--------------- */
+
+    .main-content-container {
+        gap: 16px;
+
+        width: 100%;
+        margin: 0;
+        padding: 20px 4px;
+    }
+
+    /* ------------MAIN / MAP SECTION ----------------*/
+
+    .map-section-container {
+        gap: 8px;
+
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .top-main-image {
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .left-side-time button {
+        width: 25px;
+    }
+
+    .top-main-image .day-style {
+        justify-content: space-between;
+        gap: 4px;
+
+        border-bottom: 1px solid transparent;
+    }
+
+    .top-main-image .day-style:hover {
+        border-bottom: 1px solid #F33224;
+    }
+
+    .day-style small {
+        font-size: 10px;
+    }
+
+    .today-container img {
+        width: 10px;
+    }
+
+    .map-section-container .none-important-days {
+        display: none;
+    }
+
+    .right-side-time button {
+        width: 25px;
+    }
+
+    .section-separator {
+        width: 100%;
+        height: 1px;
+        background-color: #C8C8C8;
+    }
+
+    /* ----------MAIN / SEASON SECTION-----------*/
+
+    .season-section {
+        gap: 16px;
+    }
+    
+    .season-section h2 {
+        border-bottom: 2px solid #24AEEF;
+        padding-bottom: 4px;
+    }
+    
+    .cards-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .card {
+        gap: 12px;
+    }
+    
+    .card h3 {
+        font-size: 16;
+    }
+    
+    .mini-cards-container {
+        gap: 20px;
+    }
+    
+    .mini-card {
+        gap: 4px;
+    }
+    
+    .options-station-container {
+        gap: 4px;
+    }
+    
+    .options-station-container div {
+        width: 25px;
+    }
+    
+    .options-station-container p {
+        font-size: 14px;
+    }
+    
+    .sections-anchor {
+        gap: 4px;
+    }
+    
+    .sections-anchor span {
+        font-size: 12px;
+    }
+    
+    .sections-anchor img {
+        width: 25px;
+    }
+    
+    .flu-style {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .places-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .places {
+        flex-direction: row;
+        align-items: center;
+        flex: 1 0 50%;
+    }
+    
+    .places h4 {
+        font-size: 14px;
+    }
+    
+    .places p {
+        padding: 4px 20px;
+    }    
+
+    
 }
