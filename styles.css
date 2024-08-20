@@ -1113,6 +1113,10 @@ footer .footer-limits {
         font-size: 8px;
     }
 
+    aside::-webkit-scrollbar {
+        display: none;
+    }
+
     aside h6 {
         font-size: 10px;
     }
@@ -1244,7 +1248,7 @@ footer .footer-limits {
     }
 
     .card h3 {
-        font-size: 16;
+        font-size: 16px;
     }
 
     .mini-cards-container {
@@ -1468,7 +1472,7 @@ footer .footer-limits {
         gap: 20px;
 
         width: 100%;
-        padding: 20px 12PX;
+        padding: 20px 12px;
     }
 
     .interesting-section-limits .title-container {
@@ -1492,6 +1496,7 @@ footer .footer-limits {
     }
 
 
+
     .minisection-list {
         gap: 8px;
     }
@@ -1505,7 +1510,7 @@ footer .footer-limits {
         gap: 4px;
 
         font-size: 10px;
-        padding-bottom: 0;
+        padding-bottom: 0px;
     }
 
     .vertical-lists-separator {
@@ -1513,11 +1518,7 @@ footer .footer-limits {
     }
 
     /* ----------------FOOTER---------------- */
-    footer p {
-        font-size: 10px;
-    }
-
-    footer button {
+    footer p, footer button {
         font-size: 10px;
     }
 
